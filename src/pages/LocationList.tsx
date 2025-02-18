@@ -1,4 +1,3 @@
-// src/pages/LocationList.tsx
 import React, { useState, useEffect } from "react";
 import LocationCard from "../components/LocationCard";
 
