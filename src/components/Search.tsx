@@ -1,4 +1,3 @@
-// src/components/Search.tsx
 import React from 'react';
 
 interface SearchProps {
