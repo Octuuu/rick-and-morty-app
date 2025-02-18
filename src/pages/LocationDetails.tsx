@@ -1,4 +1,3 @@
-// src/pages/LocationDetails.tsx
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
@@ -15,7 +14,6 @@ const LocationDetails: React.FC = () => {
         const data = await res.json();
         setLocation(data);
 
-        // Obtener detalles de los residentes
         const residentUrls = data.residents;
         const residentsData = await Promise.all(residentUrls.map((url: string) => fetch(url).then(res => res.json())));
         setResidents(residentsData);
