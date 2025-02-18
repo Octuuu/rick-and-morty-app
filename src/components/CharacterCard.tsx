@@ -1,4 +1,4 @@
-// src/components/CharacterCard.tsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -13,22 +13,22 @@ interface CharacterCardProps {
 
 const getSpeciesIcon = (species: string) => {
   return species.toLowerCase() === "human"
-    ? "🧑‍🚀" // Humano
-    : "👽"; // Extraterrestre
+    ? "🧑‍🚀" 
+    : "👽"; 
 };
 
 const getOriginIcon = (origin: string) => {
   return origin.toLowerCase() === "earth"
-    ? "🌍" // Tierra
-    : "🪐"; // Otros planetas
+    ? "🌍" 
+    : "🪐"; 
 };
 
 const getStatusIcon = (status: string) => {
   return status.toLowerCase() === "alive"
-    ? "🟢" // Vivo
+    ? "🟢" 
     : status.toLowerCase() === "dead"
-    ? "💀" // Muerto
-    : "❓"; // Desconocido
+    ? "💀" 
+    : "❓"; 
 };
 
 const CharacterCard: React.FC<CharacterCardProps> = ({ id, name, image, species, origin, status }) => {
