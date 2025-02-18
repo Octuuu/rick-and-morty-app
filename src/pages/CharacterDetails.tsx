@@ -1,11 +1,10 @@
-// src/pages/CharacterDetails.tsx
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const CharacterDetails: React.FC = () => {
   const { id } = useParams();
   const [character, setCharacter] = useState<any>(null);
-  const [episodes, setEpisodes] = useState<any[]>([]); // Estado para los episodios
+  const [episodes, setEpisodes] = useState<any[]>([]); 
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -15,7 +14,6 @@ const CharacterDetails: React.FC = () => {
         const data = await res.json();
         setCharacter(data);
 
-        // Obtener los episodios en los que aparece este personaje
         const episodePromises = data.episode.map((url: string) =>
           fetch(url).then((res) => res.json())
         );
@@ -36,7 +34,7 @@ const CharacterDetails: React.FC = () => {
 
   return (
     <div className="text-white bg-stone-900 p-8 rounded-xl shadow-lg">
-      {/* Información del personaje */}
+ 
       <div className="flex flex-col items-center mb-8">
         <img
           src={character.image}
@@ -50,7 +48,6 @@ const CharacterDetails: React.FC = () => {
         <p className="text-lg font-semibold mb-4">Location: {character.location.name}</p>
       </div>
 
-      {/* Episodios en los que aparece el personaje */}
       <div>
         <h2 className="text-3xl font-bold text-teal-400 mb-6">Episodes</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
