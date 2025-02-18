@@ -8,8 +8,8 @@ const Home: React.FC = () => {
   const [characters, setCharacters] = useState([]);
   const [episodes, setEpisodes] = useState([]);
   const [locations, setLocations] = useState([]);
-  const [loading, setLoading] = useState(false); // Nuevo estado de carga
-  const [error, setError] = useState<string | null>(null); // Manejo de errores
+  const [loading, setLoading] = useState(false); 
+  const [error, setError] = useState<string | null>(null); 
 
   const fetchData = async () => {
     try {
@@ -22,10 +22,10 @@ const Home: React.FC = () => {
       const episodeData = await episodeRes.json();
       const locationData = await locationRes.json();
 
-      setCharacters(characterData.results || []); // Asegurarse de que `results` esté presente
+      setCharacters(characterData.results || []); 
       setEpisodes(episodeData.results || []);
       setLocations(locationData.results || []);
-      setError(null); // Limpiar cualquier error previo
+      setError(null); 
     } catch (err) {
       setError('Error fetching data');
       console.error(err);
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
 
   const handleSearch = async (query: string) => {
     if (!query.trim()) {
-      fetchData(); // Si el input está vacío, recarga todos los datos
+      fetchData(); 
       return;
     }
 
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
       setCharacters(characterData.results || []);
       setEpisodes(episodeData.results || []);
       setLocations(locationData.results || []);
-      setError(null); // Limpiar cualquier error previo
+      setError(null); 
     } catch (err) {
       setError('Error during search');
       console.error(err);
@@ -71,10 +71,9 @@ const Home: React.FC = () => {
       <h1 className="text-white text-4xl font-bold text-center mb-6">Rick and Morty App</h1>
       <Search onSearch={handleSearch} />
       
-      {loading && <div className="text-white text-center">Loading...</div>} {/* Mensaje de carga */}
+      {loading && <div className="text-white text-center">Loading...</div>} 
 
-      {error && <div className="text-red-500 text-center">{error}</div>} {/* Mensaje de error */}
-
+      {error && <div className="text-red-500 text-center">{error}</div>}
       <div className='text-white'>
         {/* Characters */}
         <h2 className="text-2xl font-bold mb-4">Characters</h2>
