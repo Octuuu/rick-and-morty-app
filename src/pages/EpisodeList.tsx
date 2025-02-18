@@ -1,4 +1,3 @@
-// src/pages/EpisodeList.tsx
 import React, { useState, useEffect } from "react";
 import EpisodeCard from "../components/EpisodeCard";
 
