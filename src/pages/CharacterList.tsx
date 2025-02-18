@@ -1,4 +1,3 @@
-// src/pages/CharacterList.tsx
 import React, { useState, useEffect } from "react";
 import CharacterCard from "../components/CharacterCard";
 
