@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -64,3 +63,5 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ id, name, image, species,
 };
 
 export default CharacterCard;
+
+
