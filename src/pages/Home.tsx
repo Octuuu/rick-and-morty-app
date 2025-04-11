@@ -75,7 +75,7 @@ const Home: React.FC = () => {
 
       {error && <div className="text-red-500 text-center">{error}</div>}
       <div className='text-white'>
-        {/* Characters */}
+        
         <h2 className="text-2xl font-bold mb-4">Characters</h2>
         <div className="text-black grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-7 mb-6">
           {characters.length ? (
@@ -85,7 +85,6 @@ const Home: React.FC = () => {
           )}
         </div>
 
-        {/* Episodes */}
         <h2 className="text-white text-2xl font-bold mb-4">Episodes</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-6">
           {episodes.length ? (
@@ -95,7 +94,6 @@ const Home: React.FC = () => {
           )}
         </div>
 
-        {/* Locations */}
         <h2 className="text-white text-2xl font-bold mb-4">Locations</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4">
           {locations.length ? (
