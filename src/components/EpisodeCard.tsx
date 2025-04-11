@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -23,3 +22,5 @@ const EpisodeCard: React.FC<EpisodeCardProps> = ({ id, name, air_date, episode }
 };
 
 export default EpisodeCard;
+
+
