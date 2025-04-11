@@ -65,3 +65,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ id, name, image, species,
 export default CharacterCard;
 
 
+
+
+
+
