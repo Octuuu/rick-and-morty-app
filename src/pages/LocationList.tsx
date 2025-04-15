@@ -11,6 +11,7 @@ const LocationList: React.FC = () => {
   }, []);
 
   return (
+    
     <div>
       <h1 className="text-4xl text-white font-bold mb-6">Ubicaciones</h1>
       <div className="grid grid-cols-1 text-white sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -19,6 +20,7 @@ const LocationList: React.FC = () => {
         ))}
       </div>
     </div>
+    
   );
 };
 
