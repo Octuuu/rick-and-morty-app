@@ -35,13 +35,13 @@ const EpisodeDetails: React.FC = () => {
 
   return (
     <div className="bg-stone-900 text-white p-8 rounded-xl shadow-lg">
-      {/* Detalles del episodio */}
+
       <div className="mb-8 text-center">
         <h1 className="text-5xl font-bold text-teal-400 mb-4">{episode.name}</h1>
         <p className="text-xl mb-2">Air Date: <span className="font-semibold">{episode.air_date}</span></p>
         <p className="text-xl mb-2">Episode Code: <span className="font-semibold">{episode.episode}</span></p>
         <p className="text-xl mb-6">Duration: <span className="font-semibold">{episode.characters.length} Characters</span></p>
-        {/* Descripción */}
+
         <p className="text-lg text-gray-300 mb-6">
           {episode.air_date ? `This episode has a lot of action and humor!` : `No description available.`}
         </p>
@@ -49,8 +49,7 @@ const EpisodeDetails: React.FC = () => {
           More details are coming soon. Stay tuned!
         </p>
       </div>
-
-      {/* Personajes en el episodio */}
+      
       <div>
         <h2 className="text-3xl font-bold text-teal-400 mb-6">Characters in this episode:</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
