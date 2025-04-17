@@ -39,7 +39,6 @@ const LocationDetails: React.FC = () => {
         <p className="text-xl">Residents Count: <span className="font-semibold">{location.residents.length}</span></p>
       </div>
 
-      {/* Residentes */}
       <div>
         <h2 className="text-3xl font-bold text-teal-400 mb-6">Residents of this location:</h2>
         {residents.length === 0 ? (
