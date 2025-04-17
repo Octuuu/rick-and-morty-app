@@ -12,6 +12,7 @@ import "./styles/global.css";
 
 const App: React.FC = () => {
   return (
+    
     <Router>
       <Navbar />
       <div className="container mx-auto p-4">
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         </Routes>
       </div>
     </Router>
+    
   );
 };
 
