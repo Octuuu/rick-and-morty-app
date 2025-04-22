@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
 const LocationDetails: React.FC = () => {
+  
   const { id } = useParams();
   const [location, setLocation] = useState<any>(null);
   const [residents, setResidents] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    
     const fetchLocationData = async () => {
       try {
         const res = await fetch(`https://rickandmortyapi.com/api/location/${id}`);
@@ -17,6 +19,7 @@ const LocationDetails: React.FC = () => {
         const residentUrls = data.residents;
         const residentsData = await Promise.all(residentUrls.map((url: string) => fetch(url).then(res => res.json())));
         setResidents(residentsData);
+        
       } catch (error) {
         console.error("Error fetching location data:", error);
       } finally {
