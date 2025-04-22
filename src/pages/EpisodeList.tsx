@@ -11,6 +11,7 @@ const EpisodeList: React.FC = () => {
   }, []);
 
   return (
+    
     <div>
       <h1 className="text-4xl font-bold text-white mb-6">Episodes</h1>
       <div className="grid grid-cols-1 text-white sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -19,6 +20,7 @@ const EpisodeList: React.FC = () => {
         ))}
       </div>
     </div>
+    
   );
 };
 
