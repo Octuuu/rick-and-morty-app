@@ -14,6 +14,7 @@ const App: React.FC = () => {
   return (
     
     <Router>
+      
       <Navbar />
       <div className="container mx-auto p-4">
         <Routes>
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           <Route path="/locations/:id" element={<LocationDetails />} />
         </Routes>
       </div>
+      
     </Router>
     
   );
