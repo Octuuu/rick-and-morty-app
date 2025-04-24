@@ -9,6 +9,7 @@ interface EpisodeCardProps {
 }
 
 const EpisodeCard: React.FC<EpisodeCardProps> = ({ id, name, air_date, episode }) => {
+  
   return (
     <div className="bg-neutral-900 p-6 gap-50 rounded-lg shadow-lg">
       <h2 className="text-xl font-semibold">{name}</h2>
@@ -19,6 +20,7 @@ const EpisodeCard: React.FC<EpisodeCardProps> = ({ id, name, air_date, episode }
       </div>
     </div>
   );
+  
 };
 
 export default EpisodeCard;
