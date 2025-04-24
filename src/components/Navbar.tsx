@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
+    
     <nav className="bg-stone-900 p-4 text-white">
       <ul className="flex justify-center gap-14 items-center font-extrabold">
         <li>
@@ -19,6 +20,7 @@ const Navbar: React.FC = () => {
         </li>
       </ul>
     </nav>
+    
   );
 };
 
