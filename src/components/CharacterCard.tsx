@@ -30,7 +30,9 @@ const getStatusIcon = (status: string) => {
     : "❓"; 
 };
 
+
 const CharacterCard: React.FC<CharacterCardProps> = ({ id, name, image, species, origin, status }) => {
+  
   return (
     <div className="bg-neutral-900 p-4 text-white rounded-lg shadow-2xl hover:bg-neutral-800">
       <img src={image} alt={name} className="w-full h-64 object-cover rounded-t-lg" />
@@ -59,6 +61,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ id, name, image, species,
         </Link>
       </div>
     </div>
+    
   );
 };
 
