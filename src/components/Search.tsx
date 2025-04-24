@@ -10,6 +10,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
   };
 
   return (
+    
     <div className="mb-4 flex items-center justify-center ">
       <input
         type="text"
@@ -18,6 +19,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
         onChange={handleSearch}
       />
     </div>
+    
   );
 };
 
