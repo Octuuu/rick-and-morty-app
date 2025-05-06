@@ -17,6 +17,7 @@ const App: React.FC = () => {
       
       <Navbar />
       <div className="container mx-auto p-4">
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/characters" element={<CharacterList />} />
@@ -26,14 +27,13 @@ const App: React.FC = () => {
           <Route path="/episodes/:id" element={<EpisodeDetails />} />
           <Route path="/locations/:id" element={<LocationDetails />} />
         </Routes>
+        
       </div>
       
     </Router>
     
   );
 };
-
-
 
 export default App;
 
